@@ -1,3 +1,13 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width: 100%;
+    border: 1px solid grey;
+}
+
+
+
 header{
     background-color: lightgrey;
     padding: 20px;
@@ -11,22 +21,23 @@ footer {
     padding: 20px;
 }
 
-
 .topsection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display:flex;
+    flex-direction:row;
+    border-color: red;   
 }
+
 .description {
-    padding: 20px;
+    padding: 5px;
     width: 50%;
+    border-color: chartreuse;
 }
 
 .row {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
-    padding: 20px;
+    justify-content: space-evenly;
+    padding: 25px;
 }
 
 .portfolio-element {
@@ -64,120 +75,68 @@ a :hover{
 
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-} */
-/* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    border: 1px solid grey;
-} */
-/* General Styles  */
-/* html{
-font-size: 62,5%;
-}
-body{
-    font-size: 1.8rem;
-    font-family: 'Lato', sans-serif;
+@media(max-width: 800px) {
+    .row div{
+        width: 20%;
+    }
+    .topsection{
+        width: 70%;
+    }
 
 }
-button, a{
-    font-family: 'Lato', sans-serif;
-}
 
-button{
-    background:transparent;
-    color:#fff;
-    font-size: 1.8rem;
-    width: 130px;
-    line-height: 42px;
-    padding: 0;
-    border: none;   
-    transition: all 0.3s ease;
-}   
-span.btn{
-    position:relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-button:before,
-button:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    background: rgba(2,126,251,1);
-    transition: all 0.3s ease;
-}
+@media(max-width: 500px) {
+    header{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        border: red solid 1px;
+    }
+    nav{
+       display:flex;
+       flex-direction:column;
+       align-items: center;
+       width: 100%;
+       border: orange solid 1px;
+    }
+    button{
+        width: 40%;
+        margin: 1% 0;
+        border: purple solid 1px;
+    }
+    .topsection{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        /* align-items:center; */
+        width: 90%;
+    }
+    .topsection div{
+        width: 90%;
+;    }
+    .description{
+        align-items:center;
+        justify-content: center;
+    }
+    
+    .row{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+    .row div{
+        width: 40%;
+        margin: 4% 0;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-a{
-    text-decoration: none;
-    color: #4f4f4f;
+        
+    
 }
-
-a:hover{
-    color:#1ABC9C
-}
-h1, h2, h3{
-    font-family: 'Lustria', serif;
-    letter-spacing: 3px;
-}
-span{
-    font-family: 'Monoton', cursive;
-    color: #1ABC9C
-}
-h1{
-    font-size: 6rem;
-}
-h2{
-    font-size: 3rem;
-} */
